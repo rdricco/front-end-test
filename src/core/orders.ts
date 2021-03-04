@@ -6,8 +6,9 @@ export interface OrderSummary {
   name: string;
   status: string;
   total: string;
+  orderNumber: string;
 }
-
 export async function getOrders(): Promise<OrderSummary[]> {
   return fetch(`${API_URL}/orders.json`).then(res => res.json());
 }
+

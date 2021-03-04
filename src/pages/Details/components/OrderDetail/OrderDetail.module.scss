@@ -1,0 +1,95 @@
+@import './../../../../mixins.scss';
+
+.order {
+  max-width: 412px;
+  margin: 20px auto;
+  background-color: var(--color-background);
+  border-radius: 5px;
+  padding: 12px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+  .heading {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.orderHeader,
+.orderDate,
+.orderPayment {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.orderNumber {
+  margin-bottom: 1em;
+  span {
+    margin-right: 0.5em;
+  }
+}
+
+.orderDetails {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  padding: 1em;
+  border: 1px solid lightgray;
+  .heading {
+    margin: .5em auto;
+  }
+  .productList {
+    padding-left: 0;
+    .product {
+      display: flex;
+      list-style: none;
+      padding-bottom: 0.5em;
+      margin-bottom: 0.5em;
+      border-bottom: 1px solid lightgray;
+      .productName {
+        font-weight: bold;
+      }
+      span {
+        margin-right: 0.5em;
+      }
+      span:first-of-type {
+        margin-right: 0.5em;
+      }
+      span:last-of-type {
+        margin-left: auto;
+        margin-right: 0;
+        text-align: end;
+      }
+    }
+  }
+  .orderTotal{
+    display: flex;
+    justify-content: space-between;
+    .heading{
+      margin-left: 0;
+    }
+  }
+
+}
+
+.orderStatus {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  padding: 1em;
+  border: 1px solid lightgray;
+  .heading {
+    text-align: center;
+  }
+  .status{
+    padding-left: 1em;
+    li {
+      padding-left: 0;
+      margin-bottom: .2em;
+      list-style: circle;
+    }
+  }
+}
+
+.logout{
+  text-decoration: none;
+  color: inherit;
+}

@@ -22,3 +22,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* PAGINA DETALHES */
+.Aguardando .statusWait,
+.aprovado li.statusConfirm,
+.separação .statusPrepare,
+.transporte .statusTransit,
+.entregue .statusDelivered {
+  font-weight: bold;
+  list-style: disc;
+}
+/* FIM DETALHES*/
+
